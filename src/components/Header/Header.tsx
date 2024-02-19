@@ -19,32 +19,30 @@ function Header({ ...props }: HeaderProps) {
             className={cn(stylesBoot['row'], stylesBoot['align-items-center'])}
           >
             <div className={cn(stylesBoot['col-md-2'], stylesBoot['logo-div'])}>
-              {/* <a
-                id=""
-                className="logo-a"
+              <img
+                className={styles['logo-img']}
+                data-design-type="image"
+                data-title="Изображение"
                 data-draggable="true"
-                data-title="Логотип"
-                href="asa.html"
-                data-action-cart="false"
-              ></a> */}
+                src="/logo.webp"
+              />
             </div>
 
-            <div className="col-md-9">
-              <ul className="nav justify-content-center">
-                <li className="nav-item">
-                  <a className="nav-link" href="#" aria-current="page">
-                    Active link
-                  </a>
+            <div className={stylesBoot['col-md-9']}>
+              <ul
+                className={cn(
+                  stylesBoot['nav'],
+                  stylesBoot['justify-content-center']
+                )}
+              >
+                <li className={stylesBoot['nav-item']}>
+                  <a className={stylesBoot['nav-link']}>Active link</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Link
-                  </a>
+                <li className={stylesBoot['nav-item']}>
+                  <a className={stylesBoot['nav-link']}>Link</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Disabled link
-                  </a>
+                <li className={stylesBoot['nav-item']}>
+                  <a className={stylesBoot['nav-link']}>Disabled link</a>
                 </li>
               </ul>
             </div>
