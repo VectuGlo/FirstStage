@@ -1,3 +1,4 @@
+import { Layout } from './layout/LayoutPage/Layout';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -6,7 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 const route = createBrowserRouter([
   {
     path: '/',
-    element: <></>,
+    element: <Layout />,
   },
   {
     path: '*',

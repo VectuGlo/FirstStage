@@ -1,0 +1,56 @@
+a {
+  /* position: absolute; */
+  text-decoration: none;
+  color: var(--bs-white);
+}
+
+button {
+  display: block;
+  width: 80%;
+  /* Прижимаем кнопку к низу карточки */
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--bs-link-hover-color);
+  border: 1px solid var(--bs-link-hover-color);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.menu {
+  position: sticky;
+  padding: 20px 0px;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  color: var(--bs-white);
+}
+
+.logo-div {
+  margin-left: 50px;
+}
+
+.logo-img {
+  width: 300px;
+  height: 90px;
+}
+
+/* Section Hero */
+.filter-container {
+  padding-bottom: 200px;
+}
+
+.h1-span {
+  color: var(--bs-link-hover-color);
+}
+
+.filter {
+  border: 1px solid var(--bs-link-hover-color);
+  border-radius: 10px;
+  background-color: var(--bs-gray-200);
+}
