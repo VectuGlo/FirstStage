@@ -1,12 +1,16 @@
 import stylesBootstrap from 'bootstrap/dist/css/bootstrap.module.css';
 import styles from './Hero.module.css';
 import cn from 'classnames';
+import Separator from '../Separator/Separator';
 
 function Hero() {
   return (
-    <div className={cn(stylesBootstrap['row'], styles['hero'])}>
-      {/* <img className={styles['hero-img']} src="/hero.webp" /> */}
-    </div>
+    <>
+      <section className={stylesBootstrap['']}>
+        <div className={cn(styles['hero'])}>EEEEEEEEEE</div>
+        <Separator />
+      </section>
+    </>
   );
 }
 
