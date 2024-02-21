@@ -1,16 +1,12 @@
 import { HeaderProps } from './Header.props';
-import styles from './Header.module.css';
 import stylesBoot from 'bootstrap/dist/css/bootstrap.min.module.css';
+import styles from './Header.module.css';
 import cn from 'classnames';
 
 function Header({ ...props }: HeaderProps) {
   return (
     <section
-      className={cn(
-        styles['menu'],
-        stylesBoot['navbar'],
-        stylesBoot['fixed-top']
-      )}
+      className={cn(styles['header'], stylesBoot['fixed-top'])}
       {...props}
     >
       <div className={stylesBoot['container-fluid']}>
@@ -18,7 +14,7 @@ function Header({ ...props }: HeaderProps) {
           <div
             className={cn(stylesBoot['row'], stylesBoot['align-items-center'])}
           >
-            <div className={cn(stylesBoot['col-md-2'], stylesBoot['logo-div'])}>
+            <div className={cn(stylesBoot['col-md-2'], styles['logo-div'])}>
               <img
                 className={styles['logo-img']}
                 data-design-type="image"
@@ -36,7 +32,7 @@ function Header({ ...props }: HeaderProps) {
                 )}
               >
                 <li className={stylesBoot['nav-item']}>
-                  <a className={stylesBoot['nav-link']}>Active link</a>
+                  <a className={cn(stylesBoot['nav-link'])}>Active link</a>
                 </li>
                 <li className={stylesBoot['nav-item']}>
                   <a className={stylesBoot['nav-link']}>Link</a>
