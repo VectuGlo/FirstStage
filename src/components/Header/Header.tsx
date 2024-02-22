@@ -1,20 +1,26 @@
 import { HeaderProps } from './Header.props';
-import stylesBoot from 'bootstrap/dist/css/bootstrap.min.module.css';
+import stylesBootstrap from 'bootstrap/dist/css/bootstrap.min.module.css';
 import styles from './Header.module.css';
 import cn from 'classnames';
 
 function Header({ ...props }: HeaderProps) {
   return (
     <section
-      className={cn(styles['header'], stylesBoot['fixed-top'])}
+      className={cn(styles['header'], stylesBootstrap['fixed-top'])}
       {...props}
     >
-      <div className={stylesBoot['container-fluid']}>
-        <header className={stylesBoot['col-12']}>
+      <div className={stylesBootstrap['container-fluid']}>
+        <header className={stylesBootstrap['col-12']}>
           <div
-            className={cn(stylesBoot['row'], stylesBoot['align-items-center'])}
+            className={cn(
+              stylesBootstrap['row'],
+              stylesBootstrap['align-items-center'],
+              stylesBootstrap['justify-content-between']
+            )}
           >
-            <div className={cn(stylesBoot['col-md-2'], styles['logo-div'])}>
+            <div
+              className={cn(stylesBootstrap['col-md-2'], styles['logo-div'])}
+            >
               <img
                 className={styles['logo-img']}
                 data-design-type="image"
@@ -24,21 +30,34 @@ function Header({ ...props }: HeaderProps) {
               />
             </div>
 
-            <div className={stylesBoot['col-md-9']}>
+            <div className={stylesBootstrap['col-md-9']}>
               <ul
                 className={cn(
-                  stylesBoot['nav'],
-                  stylesBoot['justify-content-center']
+                  stylesBootstrap['nav'],
+
+                  stylesBootstrap['justify-content-end']
                 )}
               >
-                <li className={stylesBoot['nav-item']}>
-                  <a className={cn(stylesBoot['nav-link'])}>Active link</a>
+                <li className={stylesBootstrap['nav-item']}>
+                  <a className={cn(stylesBootstrap['nav-link'])}>
+                    Этапы работы
+                  </a>
                 </li>
-                <li className={stylesBoot['nav-item']}>
-                  <a className={stylesBoot['nav-link']}>Link</a>
+                <li className={stylesBootstrap['nav-item']}>
+                  <a className={stylesBootstrap['nav-link']}>Наши клиенты</a>
                 </li>
-                <li className={stylesBoot['nav-item']}>
-                  <a className={stylesBoot['nav-link']}>Disabled link</a>
+                <li className={stylesBootstrap['nav-item']}>
+                  <a className={stylesBootstrap['nav-link']}>
+                    Популярные автомобили
+                  </a>
+                </li>
+                <li className={stylesBootstrap['nav-item']}>
+                  <a className={stylesBootstrap['nav-link']}>
+                    Онлайн калькулятор
+                  </a>
+                </li>
+                <li className={stylesBootstrap['nav-item']}>
+                  <a className={stylesBootstrap['nav-link']}>Контакты</a>
                 </li>
               </ul>
             </div>
