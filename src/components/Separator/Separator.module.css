@@ -1,10 +1,9 @@
 .custom {
-  height: 30px;
+  height: 66px;
   background: linear-gradient(
     to top,
     var(--bs-white) 40%,
     rgba(255, 0, 0, 0.777) 65%,
-
-    var(--bs-black) 90%
+    rgba(0, 0, 0, 0.98) 85%
   );
 }

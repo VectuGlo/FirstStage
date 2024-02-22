@@ -1,17 +1,20 @@
 .button {
   border-radius: 6px;
-  padding: 8px 30px;
+  padding: 16px 30px;
   cursor: pointer;
-  transition: background 0.25s;
-  font-size: 16px;
+  font-weight: 400;
+  transition: box-shadow 1s;
+  font-size: 20px;
   border: none;
   color: var(--white-color);
 }
 
 .accent {
-  background: var(--primary-color);
+  background: var(--bs-black);
+  color: var(--white-color);
+  box-shadow: var(--black-hover-box-shadow);
 }
 
 .accent:hover {
-  background: var(--primary-hover-color);
+  box-shadow: var(--white-hover-box-shadow);
 }
