@@ -12,3 +12,10 @@ body {
   font-family: 'Assistant', sans-serif;
   font-family: 'Roboto Serif', serif;
 }
+
+h1,
+h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,5 +1,14 @@
 .custom {
-  height: 66px;
+  height: 50px;
+  background: linear-gradient(
+    to top,
+    var(--bs-white) 40%,
+    rgba(255, 0, 0, 0.777) 65%,
+    var(--bs-white) 85%
+  );
+}
+
+.custom.dark {
   background: linear-gradient(
     to top,
     var(--bs-white) 40%,
