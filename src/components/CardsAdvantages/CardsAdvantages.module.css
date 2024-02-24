@@ -1,0 +1,42 @@
+.cards {
+  gap: 40px;
+}
+
+.cards .card {
+  padding: 20px;
+  min-height: 200px;
+  border: 1px solid var(--bs-gray-500);
+  border-radius: 10px;
+  background-color: var(--white-color);
+  transition: background 0.4s ease-in-out;
+}
+
+.card {
+  gap: 15px;
+  transform-style: preserve-3d;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15), 0px 0px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card-info {
+  margin: auto 0;
+}
+
+.card:hover {
+  background-color: var(--bs-dark);
+  color: aliceblue;
+}
+
+.back-icon {
+  display: flex;
+  width: 82px;
+  height: 82px;
+  background-color: var(--white-color);
+  border-radius: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}

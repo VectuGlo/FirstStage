@@ -1,13 +1,9 @@
 .section-advantages {
-  height: 450px;
+  height: 475px;
 }
 
 .advantages-h2 {
   color: var(--text-color);
   font-size: 52px;
-}
-
-.cards .card {
-  border: 1px solid var(--redus-color);
-  border-radius: 10px;
+  margin-bottom: 45px;
 }

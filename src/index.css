@@ -1,21 +1,24 @@
 :root {
   --font1: 'Assistant', sans-serif;
-  --font2: 'Roboto Serif', sans-serif;
+  --font2: Roboto, sans-serif;
+  --font2s: 'Roboto Serif', sans-serif;
+  --font3: Stem, sans-serif;
   --text-color: #000000;
   --white-color: white;
   --redus-color: rgba(255, 0, 0, 1);
+  --blakus-color: rgba(0, 0, 0, 0.966);
   --white-hover-box-shadow: rgba(255, 255, 255, 1) 0px 0px 20px 2px;
   --black-hover-box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px 2px;
 }
 
 body {
   font-family: 'Assistant', sans-serif;
-  font-family: 'Roboto Serif', serif;
 }
 
 h1,
-h2 {
-  font-family: Roboto, sans-serif;
+h2,
+h3 {
+  font-family: var(--font2);
   font-weight: 700;
   font-style: normal;
 }

@@ -2,10 +2,11 @@
   height: 50px;
   background: linear-gradient(
     to top,
-    var(--bs-white) 40%,
+    rgba(0, 0, 0, 0.966) 40%,
     rgba(255, 0, 0, 0.777) 65%,
     var(--bs-white) 85%
   );
+  animation: anim-style, 2s, linear, infinite;
 }
 
 .custom.dark {
@@ -15,4 +16,13 @@
     rgba(255, 0, 0, 0.777) 65%,
     rgba(0, 0, 0, 0.966) 85%
   );
+}
+
+@keyframes anim-style {
+  0%,
+  100% {
+  }
+
+  50% {
+  }
 }
