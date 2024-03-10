@@ -15,37 +15,28 @@
 }
 
 .ofice-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .ofice-content h4 {
   font-size: 36px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.ofice-content div {
-  justify-content: center;
-  align-items: center;
-}
-
-.ofice-content svg {
-  width: 24px;
-  height: 24px;
-}
-
-.ofice-content a,
-.addressDiv {
+.ofice-content-li {
   display: flex;
   align-items: center;
   gap: 35px;
-  font-size: 28px;
-  color: var(--white-color);
 }
 
-.addressDivContent {
+.ofice-content-li svg {
+  width: 30px;
+  height: 30px;
+}
+
+.addressDiv {
   display: flex;
   flex-direction: column;
 }

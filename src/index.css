@@ -24,9 +24,19 @@ h3 {
 }
 
 a {
+  color: var(--white-color);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0px 0px 15px 0px;
 }
 
 a:hover {
