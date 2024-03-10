@@ -1,8 +1,33 @@
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
+import { YandexMapsProps } from './YandexMaps.props';
 import './YandexMaps.css';
 
-function YandexMaps() {
-  const pointCenter = [43.14026428035671, 131.91669773854233];
+function YandexMaps({
+  placeMarkPos,
+  textAddress1,
+  textAddress2,
+}: YandexMapsProps) {
+  const dispMark = (text1, text2) => {
+    return (
+      <Placemark
+        defaultOptions={{
+          iconLayout: 'default#image',
+          iconImageHref: 'favicon.ico',
+          iconImageSize: [32, 32],
+          iconImageOffset: [-32, -25],
+        }}
+        geometry={placeMarkPos}
+        properties={{
+          hintContent: `<div id="hintContent1">
+                        <b>Asia <span id='span-red1'>Sales</span> Auto</b>
+                        <span>${text1}</span>
+                        <span>${text2}</span>
+                      </div>
+                      `,
+        }}
+      />
+    );
+  };
 
   return (
     <YMaps
@@ -12,7 +37,7 @@ function YandexMaps() {
     >
       <Map
         state={{
-          center: pointCenter,
+          center: placeMarkPos,
           zoom: 13,
           controls: [
             'trafficControl',
@@ -28,26 +53,10 @@ function YandexMaps() {
           'control.FullscreenControl',
           'geoObject.addon.hint',
         ]}
-        width="100%"
+        width="90%"
         height="400px"
       >
-        <Placemark
-          defaultOptions={{
-            iconLayout: 'default#image',
-            iconImageHref: 'favicon.ico',
-            iconImageSize: [32, 32],
-            iconImageOffset: [-32, -25],
-          }}
-          geometry={pointCenter}
-          properties={{
-            hintContent: `<div id="hintContent1">
-              <b>Asia <span id='span-red1'>Sales</span> Auto</b>
-              <span>г. Владивосток, ул. Камская, д. 5Б</span>
-              <span>1 этаж, 1 офис</span>
-            </div>
-            `,
-          }}
-        />
+        {dispMark(textAddress1, textAddress2)}
       </Map>
     </YMaps>
   );
