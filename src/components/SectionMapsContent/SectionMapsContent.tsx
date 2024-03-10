@@ -10,7 +10,7 @@ function SectionMapsContent({ elementsContents }: SectionMapsContentProps) {
     return (
       <div
         key={elem.id}
-        className={cn(styles['offices'], stylesBootstrap['col-6'])}
+        className={cn(styles['offices'], stylesBootstrap['col-5'])}
       >
         <YandexMaps
           placeMarkPos={elem.placeMarkPos}
@@ -41,10 +41,11 @@ function SectionMapsContent({ elementsContents }: SectionMapsContentProps) {
                   <Button
                     className={cn(
                       stylesBootstrap['d-flex'],
-                      stylesBootstrap['gap-3']
+                      stylesBootstrap['gap-3'],
+                      styles['button-wa']
                     )}
                   >
-                    {elem.imageWA} Написать нам
+                    {elem.imageWA} Связаться с нами
                   </Button>
                 </a>
               )}

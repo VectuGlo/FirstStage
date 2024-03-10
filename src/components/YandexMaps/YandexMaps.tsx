@@ -7,7 +7,7 @@ function YandexMaps({
   textAddress1,
   textAddress2,
 }: YandexMapsProps) {
-  const dispMark = (text1, text2) => {
+  const dispMark = (text1 = textAddress1, text2 = textAddress2) => {
     return (
       <Placemark
         defaultOptions={{
@@ -56,7 +56,7 @@ function YandexMaps({
         width="90%"
         height="400px"
       >
-        {dispMark(textAddress1, textAddress2)}
+        {dispMark()}
       </Map>
     </YMaps>
   );

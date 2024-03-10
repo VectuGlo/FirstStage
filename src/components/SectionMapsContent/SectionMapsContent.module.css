@@ -1,13 +1,12 @@
 .offices {
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
 }
 
 .office-content {
+  margin-top: 25px;
   font-weight: 400;
   font-size: 24px;
 }
@@ -22,6 +21,12 @@
   display: flex;
   align-items: center;
   gap: 35px;
+}
+
+.button-wa {
+  padding: 7px 10px;
+  border-radius: 29px;
+  background-color: green;
 }
 
 .office-content-li svg {
