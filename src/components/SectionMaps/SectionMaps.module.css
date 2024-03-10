@@ -13,30 +13,3 @@
   padding: 0px 20px 100px 20px;
   display: flex;
 }
-
-.ofice-content {
-  font-weight: 400;
-  font-size: 24px;
-}
-
-.ofice-content h4 {
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.ofice-content-li {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-}
-
-.ofice-content-li svg {
-  width: 30px;
-  height: 30px;
-}
-
-.addressDiv {
-  display: flex;
-  flex-direction: column;
-}

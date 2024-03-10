@@ -1,5 +1,5 @@
 import stylesBootstrap from 'bootstrap/dist/css/bootstrap.module.css';
-import styles from './Advantages.module.css';
+import styles from './SectionAdvantages.module.css';
 import cn from 'classnames';
 import Separator from '../Separator/Separator';
 import CardsAdvantages from '../CardsAdvantages/CardsAdvantages';

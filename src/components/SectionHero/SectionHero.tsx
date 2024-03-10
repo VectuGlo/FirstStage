@@ -1,5 +1,5 @@
 import stylesBootstrap from 'bootstrap/dist/css/bootstrap.module.css';
-import styles from './Hero.module.css';
+import styles from './SectionHero.module.css';
 import cn from 'classnames';
 import Separator from '../Separator/Separator';
 import Button from '../Button/Button';
