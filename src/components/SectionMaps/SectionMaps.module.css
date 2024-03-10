@@ -1,5 +1,5 @@
 .section-maps {
-  height: 500px;
+  /* height: 500px; */
   background-color: var(--blakus-color);
   color: var(--white-color);
 }
@@ -9,6 +9,10 @@
   margin-bottom: 45px;
 }
 
-.bal {
-  color: brown;
+.advantages {
+  padding: 0px 20px 100px 20px;
+  display: flex;
+}
+
+.ofice-content {
 }
