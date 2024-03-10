@@ -1,3 +1,6 @@
+import { HiDevicePhoneMobile } from 'react-icons/hi2';
+import { TfiEmail } from 'react-icons/tfi';
+import { TbHomeSearch } from 'react-icons/tb';
 import stylesBootstrap from 'bootstrap/dist/css/bootstrap.module.css';
 import styles from './SectionMaps.module.css';
 import cn from 'classnames';
@@ -22,6 +25,40 @@ function SectionMaps() {
               className={cn(stylesBootstrap['col-6'], styles['ofice-content'])}
             >
               <h4>Офис во Владивостоке</h4>
+              <div className={stylesBootstrap['']}>
+                <a
+                  data-design-type="text"
+                  data-draggable="true"
+                  data-title="Телефон"
+                  href="tel:+79243358311"
+                >
+                  <HiDevicePhoneMobile />
+                  +7 (924) 335-83-11
+                </a>
+
+                <a
+                  data-design-type="text"
+                  data-draggable="true"
+                  data-title="Email"
+                  href="mailto:office@asiasalesauto.ru"
+                  target="_blank"
+                >
+                  <TfiEmail />
+                  office@asiasalesauto.ru
+                </a>
+              </div>
+              <div
+                className={styles['addressDiv']}
+                data-design-type="text"
+                data-draggable="true"
+                data-title="Адрес"
+              >
+                <TbHomeSearch />
+                <div className={cn(styles['addressDivContent'])}>
+                  <span>г. Владивосток, ул. Камская, д. 5Б</span>
+                  <span>1 этаж, 1 офис</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

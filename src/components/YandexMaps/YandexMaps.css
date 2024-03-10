@@ -1,9 +1,20 @@
-#mapContainer1 {
-  width: 100%;
-  height: 500px;
+ymaps .ymaps-2-1-79-hint {
+  color: var(--white-color);
+}
+
+ymaps .ymaps-2-1-79-hint__text {
+  padding: 0;
 }
 
 #hintContent1 {
+  padding: 2px 5px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: var(--blakus-color);
+  /* color: var(--blakus-color); */
+}
+
+#span-red1 {
+  color: var(--redus-color);
 }

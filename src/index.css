@@ -22,3 +22,13 @@ h3 {
   font-weight: 700;
   font-style: normal;
 }
+
+a {
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+a:hover {
+  color: var(--redus-color);
+}

@@ -41,9 +41,9 @@ function YandexMaps() {
           geometry={pointCenter}
           properties={{
             hintContent: `<div id="hintContent1">
-              <b>Asia Sales Auto</b>
-              <span>город Владивосток, улица Камская 5Б</span>
-
+              <b>Asia <span id='span-red1'>Sales</span> Auto</b>
+              <span>г. Владивосток, ул. Камская, д. 5Б</span>
+              <span>1 этаж, 1 офис</span>
             </div>
             `,
           }}
