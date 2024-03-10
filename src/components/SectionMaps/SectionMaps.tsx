@@ -3,6 +3,7 @@ import styles from './SectionMaps.module.css';
 import cn from 'classnames';
 import Separator from '../Separator/Separator';
 import YandexMaps from '../YandexMaps/YandexMaps';
+import SectionMapsContent from '../SectionMapsContent/SectionMapsContent';
 
 function SectionMaps() {
   return (
@@ -15,8 +16,14 @@ function SectionMaps() {
             Наши Офисы
           </h2>
           <div className={cn(styles['advantages'])}>
-            <div className={stylesBootstrap['col-6']}>
+            <div
+              className={cn(
+                stylesBootstrap['col-12'],
+                stylesBootstrap['d-flex']
+              )}
+            >
               <YandexMaps />
+              <SectionMapsContent />
             </div>
           </div>
         </div>
