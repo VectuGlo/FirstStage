@@ -1,0 +1,125 @@
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.content h1,
+h3 {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+/*-------------------------TIMELINE-----------------------*/
+.timeline {
+  width: 90%;
+  margin: 30px auto;
+  line-height: 150%;
+  position: relative;
+  transition: all 0.3s;
+}
+.timeline,
+.timeline *,
+.timeline *::after,
+.timeline *::before {
+  box-sizing: border-box;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  background-color: #000;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -23px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.timeline-icon img {
+  width: 70%;
+}
+
+.timeline-content {
+  width: 45%;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.timeline-content h2 {
+  padding: 15px;
+  color: #fff;
+  margin: -20px -20px 0 -20px;
+  font-weight: 500;
+  background-color: rgb(93, 95, 95);
+}
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  background-color: rgb(93, 95, 95);
+}
+.right {
+  float: right;
+}
+.right::before {
+  left: -5px;
+  right: inherit;
+}
+
+.timeline-item::after,
+.timeline-item::before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    margin: 30px;
+    padding: 0;
+  }
+  .timeline::before {
+    left: 0;
+  }
+  .timeline-icon {
+    left: 0;
+  }
+  .timeline-content {
+    width: 90%;
+    float: right;
+  }
+  .timeline-content::before {
+    left: -5px;
+    right: inherit;
+  }
+}
+.left {
+}

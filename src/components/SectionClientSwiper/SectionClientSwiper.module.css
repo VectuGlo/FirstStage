@@ -1,0 +1,75 @@
+.swiper {
+  margin: 50px 0px 0px 0px;
+}
+
+.swiper-wrapper {
+  box-sizing: border-box;
+  /*padding: 0 10px;*/
+}
+.swiper-slide img {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  max-height: 297px;
+  object-fit: cover;
+  user-select: none;
+}
+/*Стилизация стрелочек*/
+.swiper .swiper-button-prev {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 0;
+}
+.swiper .swiper-button-next {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  right: 0px;
+}
+.swiper .swiper-button-next::after {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.swiper .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+/*Custom pagination*/
+.my-custom-pagination-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.my-custom-pagination-div .swiper-pagination-bullet {
+  width: 24px;
+  height: 4px;
+  border-radius: 0;
+}
+.my-custom-pagination-div .swiper-pagination-bullet-active {
+  background-color: black;
+}
+/*-----------------------------------*/
+@media screen and (max-width: 768px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .swiper .swiper-button-next {
+    display: none;
+  }
+  .swiper .swiper-button-prev {
+    display: none;
+  }
+}
