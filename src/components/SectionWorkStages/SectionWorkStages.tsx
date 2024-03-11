@@ -1,10 +1,10 @@
-import './Circle.css';
+import './SectionWorkStages.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-function Circle() {
-  let timelineElements = [
+function SectionWorkStages() {
+  const timelineElements = [
     {
       id: 1,
       title: 'Заявка на покупку авто',
@@ -59,34 +59,36 @@ function Circle() {
     Aos.init({ duration: '1800' });
   }, []);
   return (
-    <div className="content">
-      <h1 className="title">Этапы Работы</h1>
-      <div className="timeline">
-        {timelineElements.map((element) => {
-          return (
-            <div
-              className="timeline-item"
-              key={element.id}
-              data-aos={element.id % 2 === 0 ? 'fade-right' : 'fade-left'}
-            >
-              <div className="timeline-icon">
-                <img src={element.icon}></img>
-              </div>
+    <section>
+      <div className="content">
+        <h1 className="title">Этапы Работы</h1>
+        <div className="timeline">
+          {timelineElements.map((element) => {
+            return (
               <div
-                className={
-                  element.id % 2 === 0
-                    ? 'timeline-content right '
-                    : 'timeline-content left '
-                }
+                className="timeline-item"
+                key={element.id}
+                data-aos={element.id % 2 === 0 ? 'fade-right' : 'fade-left'}
               >
-                <h2>{element.title}</h2>
-                <p>{element.text}</p>
+                <div className="timeline-icon">
+                  <img src={element.icon}></img>
+                </div>
+                <div
+                  className={
+                    element.id % 2 === 0
+                      ? 'timeline-content right '
+                      : 'timeline-content left '
+                  }
+                >
+                  <h2>{element.title}</h2>
+                  <p>{element.text}</p>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
-export default Circle;
+export default SectionWorkStages;

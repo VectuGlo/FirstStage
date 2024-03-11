@@ -1,16 +1,15 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
-import { useEffect, useState } from 'react';
-import React from 'react';
-import styles from './SectionClientSwiper.module.css';
+import { useState } from 'react';
+import './SectionClientSwiper.css';
 import FsLightbox from 'fslightbox-react';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
+import Separator from '../Separator/Separator';
 
-function ClientSwiper() {
+function SectionClientSwiper() {
   const swiperElements = [
     '/Images/Swiper/swiper-1.jpeg',
     '/Images/Swiper/swiper-2.jpeg',
@@ -23,7 +22,6 @@ function ClientSwiper() {
   ];
 
   const breakpoints = {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -51,35 +49,38 @@ function ClientSwiper() {
   }
 
   return (
-    <div className="content">
-      <h3 className="title">Наши клиенты</h3>
-      <Swiper
-        spaceBetween={10}
-        slidesPerView={3}
-        breakpoints={breakpoints}
-        loop={true}
-        pagination={{
-          el: '.my-custom-pagination-div',
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-      >
-        {swiperElements.map((element, i) => {
-          return (
-            <SwiperSlide key={i} onClick={() => openLightboxOnSlide(i + 1)}>
-              <img src={element} />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-      <FsLightbox
-        toggler={lightboxController.toggler}
-        sources={swiperElements}
-        slide={lightboxController.slide}
-      />
-      <div className="my-custom-pagination-div"></div>
-    </div>
+    <section className="container-fluid">
+      <div className="content">
+        <h3 className="content-h3">Наши клиенты</h3>
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={3}
+          breakpoints={breakpoints}
+          loop={true}
+          pagination={{
+            el: '.my-custom-pagination-div',
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+        >
+          {swiperElements.map((element, i) => {
+            return (
+              <SwiperSlide key={i} onClick={() => openLightboxOnSlide(i + 1)}>
+                <img src={element} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <FsLightbox
+          toggler={lightboxController.toggler}
+          sources={swiperElements}
+          slide={lightboxController.slide}
+        />
+        <div className="my-custom-pagination-div"></div>
+      </div>
+      <Separator />
+    </section>
   );
 }
-export default ClientSwiper;
+export default SectionClientSwiper;
