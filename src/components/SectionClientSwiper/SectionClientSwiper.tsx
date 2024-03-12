@@ -1,13 +1,15 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import { useState } from 'react';
-import './SectionClientSwiper.css';
 import FsLightbox from 'fslightbox-react';
+import './SCSwiper.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
 import Separator from '../Separator/Separator';
+import styles from './SectionClientSwiper.module.css';
+import stylesBootstrap from 'bootstrap/dist/css/bootstrap.module.css';
 
 function SectionClientSwiper() {
   const swiperElements = [
@@ -49,9 +51,9 @@ function SectionClientSwiper() {
   }
 
   return (
-    <section className="container-fluid">
-      <div className="content">
-        <h3 className="content-h3">Наши клиенты</h3>
+    <section className={stylesBootstrap['container-fluid']}>
+      <div className={styles['content']}>
+        <h3>Наши клиенты</h3>
         <Swiper
           spaceBetween={10}
           slidesPerView={3}
