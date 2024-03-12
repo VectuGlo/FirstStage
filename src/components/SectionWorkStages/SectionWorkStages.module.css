@@ -1,20 +1,34 @@
-.content {
-  max-width: 1100px;
+.section-works-stages {
   margin: 0 auto;
-  padding: 10px;
+  padding-bottom: 40px;
+  background-color: var(--blakus-color);
+  color: var(--white-color);
 }
 
-.content h1,
-h3 {
-  text-align: center;
-  padding: 10px 0;
-  font-size: 40px;
-  margin-bottom: 80px;
+.div-works-stages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('/public/logoBig.webp') center no-repeat;
+  background-size: 1000px;
+  filter: blur(5px);
+}
+
+.content-h2 {
+  font-size: 52px;
+  margin-bottom: 55px;
 }
 /*-------------------------TIMELINE-----------------------*/
 .timeline {
   width: 90%;
-  margin: 30px auto;
+  margin: 0px auto;
   line-height: 150%;
   position: relative;
   transition: all 0.3s;
@@ -33,12 +47,12 @@ h3 {
   height: 100%;
   left: 50%;
   top: 0;
-  background-color: #000;
 }
 
 .timeline-item {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   position: relative;
+  color: var(--blakus-color);
 }
 
 .timeline-icon {
@@ -51,8 +65,9 @@ h3 {
   align-items: center;
   justify-content: center;
   margin-left: -23px;
+  border: var(--) 1px solid;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 .timeline-icon img {
   width: 70%;
@@ -63,16 +78,21 @@ h3 {
   padding: 20px;
   position: relative;
   border-radius: 5px;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: var(--white-color);
 }
-.timeline-content h2 {
+
+.timeline-content h3 {
   padding: 15px;
-  color: #fff;
+  color: var(--white-color);
   margin: -20px -20px 0 -20px;
   font-weight: 500;
   background-color: rgb(93, 95, 95);
 }
+
+.timeline-content p {
+  padding: auto 15px;
+}
+
 .timeline-content::before {
   content: '';
   position: absolute;
@@ -120,6 +140,4 @@ h3 {
     left: -5px;
     right: inherit;
   }
-}
-.left {
 }

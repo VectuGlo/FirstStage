@@ -51,38 +51,40 @@ function SectionClientSwiper() {
   }
 
   return (
-    <section className={stylesBootstrap['container-fluid']}>
-      <div className={styles['content']}>
-        <h3>Наши клиенты</h3>
-        <Swiper
-          spaceBetween={10}
-          slidesPerView={3}
-          breakpoints={breakpoints}
-          loop={true}
-          pagination={{
-            el: '.my-custom-pagination-div',
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-        >
-          {swiperElements.map((element, i) => {
-            return (
-              <SwiperSlide key={i} onClick={() => openLightboxOnSlide(i + 1)}>
-                <img src={element} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-        <FsLightbox
-          toggler={lightboxController.toggler}
-          sources={swiperElements}
-          slide={lightboxController.slide}
-        />
-        <div className="my-custom-pagination-div"></div>
-      </div>
+    <>
+      <section className={stylesBootstrap['container-fluid']}>
+        <div className={styles['content']}>
+          <h3>Наши клиенты</h3>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={3}
+            breakpoints={breakpoints}
+            loop={true}
+            pagination={{
+              el: '.my-custom-pagination-div',
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+          >
+            {swiperElements.map((element, i) => {
+              return (
+                <SwiperSlide key={i} onClick={() => openLightboxOnSlide(i + 1)}>
+                  <img src={element} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+          <FsLightbox
+            toggler={lightboxController.toggler}
+            sources={swiperElements}
+            slide={lightboxController.slide}
+          />
+          <div className="my-custom-pagination-div"></div>
+        </div>
+      </section>
       <Separator />
-    </section>
+    </>
   );
 }
 export default SectionClientSwiper;
