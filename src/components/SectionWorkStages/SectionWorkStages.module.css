@@ -65,7 +65,7 @@
   align-items: center;
   justify-content: center;
   margin-left: -23px;
-  border: var(--) 1px solid;
+  border: var(--greus-color) 1px solid;
   border-radius: 50%;
   background-color: var(--white-color);
 }
@@ -86,11 +86,11 @@
   color: var(--white-color);
   margin: -20px -20px 0 -20px;
   font-weight: 500;
-  background-color: rgb(93, 95, 95);
+  background-color: var(--greus-color);
 }
 
 .timeline-content p {
-  padding: auto 15px;
+  padding: 25px 0px;
 }
 
 .timeline-content::before {
@@ -103,7 +103,7 @@
   display: block;
   border-radius: 3px;
   transform: rotate(45deg);
-  background-color: rgb(93, 95, 95);
+  background-color: var(--greus-color);
 }
 .right {
   float: right;

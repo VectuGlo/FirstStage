@@ -18,6 +18,7 @@
   cursor: pointer;
 }
 
-div li a {
+.header-nav a {
+  padding-top: 15px;
   cursor: pointer;
 }

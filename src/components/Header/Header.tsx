@@ -1,14 +1,10 @@
-import { HeaderProps } from './Header.props';
 import stylesBootstrap from 'bootstrap/dist/css/bootstrap.min.module.css';
 import styles from './Header.module.css';
 import cn from 'classnames';
 
-function Header({ ...props }: HeaderProps) {
+function Header() {
   return (
-    <section
-      className={cn(styles['header'], stylesBootstrap['fixed-top'])}
-      {...props}
-    >
+    <section className={cn(styles['header'], stylesBootstrap['fixed-top'])}>
       <div className={stylesBootstrap['container-fluid']}>
         <header className={stylesBootstrap['col-12']}>
           <div
@@ -30,18 +26,18 @@ function Header({ ...props }: HeaderProps) {
               />
             </div>
 
-            <div className={stylesBootstrap['col-md-9']}>
+            <div
+              className={cn(stylesBootstrap['col-md-9'], styles['header-nav'])}
+            >
               <ul
                 className={cn(
                   stylesBootstrap['nav'],
-
+                  stylesBootstrap['align-items-center'],
                   stylesBootstrap['justify-content-end']
                 )}
               >
                 <li className={stylesBootstrap['nav-item']}>
-                  <a className={cn(stylesBootstrap['nav-link'])}>
-                    Этапы работы
-                  </a>
+                  <a className={stylesBootstrap['nav-link']}>Этапы работы</a>
                 </li>
                 <li className={stylesBootstrap['nav-item']}>
                   <a className={stylesBootstrap['nav-link']}>Наши клиенты</a>

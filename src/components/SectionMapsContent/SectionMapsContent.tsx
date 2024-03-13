@@ -24,7 +24,6 @@ const elementsContents = [
     imageWA: <FaWhatsapp />,
     hrefWA:
       'https://wa.me/+79243358311?text=Здравствуйте,%20пишу%20с%20asiasalesauto.ru',
-    disoption: true,
     placeMarkPos: [43.14026428035671, 131.91669773854233],
   },
   {
@@ -40,8 +39,8 @@ const elementsContents = [
     textAddress1: 'г. Красноярск, ул. Деповская, д. 15,',
     textAddress2: '1 этаж, 4 офис',
     imageWA: <FaWhatsapp />,
-    hrefWA: '',
-    disoption: false,
+    hrefWA:
+      'https://wa.me/+79330233966?text=Здравствуйте,%20пишу%20с%20asiasalesauto.ru',
     placeMarkPos: [56.004365073511224, 92.83152775051715],
   },
 ];
@@ -71,25 +70,24 @@ function SectionMapsContent() {
               >
                 {elem.phone}
               </a>
-              {!!elem.disoption && (
-                <a
-                  href={elem.hrefWA}
-                  data-design-type="button"
-                  data-draggable="true"
-                  data-title="WhatsApp"
-                  target="_blank"
+
+              <a
+                href={elem.hrefWA}
+                data-design-type="button"
+                data-draggable="true"
+                data-title="WhatsApp"
+                target="_blank"
+              >
+                <Button
+                  className={cn(
+                    stylesBootstrap['d-flex'],
+                    stylesBootstrap['gap-3'],
+                    styles['button-wa']
+                  )}
                 >
-                  <Button
-                    className={cn(
-                      stylesBootstrap['d-flex'],
-                      stylesBootstrap['gap-3'],
-                      styles['button-wa']
-                    )}
-                  >
-                    {elem.imageWA} Связаться с нами
-                  </Button>
-                </a>
-              )}
+                  {elem.imageWA} Связаться с нами
+                </Button>
+              </a>
             </li>
             <li className={styles['office-content-li']}>
               {elem.imageMail}
