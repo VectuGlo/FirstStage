@@ -73,8 +73,8 @@ function SectionWorkStages() {
             stylesBootstrap['container-fluid']
           )}
         >
-          <div className={styles['background-div']}></div>
           <h2 className={styles['content-h2']}>Этапы Работы</h2>
+          <div className={styles['background-div']}></div>
           <div className={styles['timeline']}>
             {timelineElements.map((element) => {
               return (

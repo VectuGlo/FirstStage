@@ -1,6 +1,5 @@
 .section-works-stages {
-  margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   background-color: var(--blakus-color);
   color: var(--white-color);
 }
@@ -13,18 +12,22 @@
 }
 
 .background-div {
+  margin-top: 150px;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background: url('/public/logoBig.webp') center no-repeat;
-  background-size: 1000px;
-  filter: blur(5px);
+  height: 135%;
+  min-width: 150%;
+  background: linear-gradient(to top, rgba(0, 0, 15, 0.01), rgba(0, 0, 0, 0.78)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(10, 15, 20, 1)),
+    url('/public/FotoVlad.webp') center no-repeat;
+  background-size: cover;
+  filter: blur(1px);
 }
 
 .content-h2 {
   font-size: 52px;
   margin-bottom: 55px;
 }
+
 /*-------------------------TIMELINE-----------------------*/
 .timeline {
   width: 90%;
@@ -75,7 +78,7 @@
 
 .timeline-content {
   width: 45%;
-  padding: 20px;
+  padding: 0px 20px;
   position: relative;
   border-radius: 5px;
   background-color: var(--white-color);
