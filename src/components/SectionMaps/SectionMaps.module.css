@@ -8,6 +8,14 @@
   margin-bottom: 45px;
 }
 
+.background-div {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: url('/public/logoBig.webp') center no-repeat;
+  background-size: 350px;
+}
+
 .advantages {
   padding: 0px 20px 20px 20px;
   display: flex;

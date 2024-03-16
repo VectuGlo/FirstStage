@@ -17,6 +17,7 @@ function SectionMaps() {
           <div className={cn(styles['advantages'])}>
             <SectionMapsContent />
           </div>
+          <div className={styles['background-div']}></div>
         </div>
       </section>
       <Separator apperance="dark" />
