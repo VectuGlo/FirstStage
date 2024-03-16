@@ -22,8 +22,7 @@
 .content-h2 {
   font-size: 52px;
   margin-bottom: 55px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 /*-------------------------TIMELINE-----------------------*/

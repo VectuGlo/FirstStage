@@ -54,7 +54,7 @@ function SectionClientSwiper() {
     <>
       <section className={stylesBootstrap['container-fluid']}>
         <div className={styles['content']}>
-          <h3>Наши клиенты</h3>
+          <h2 className={styles['content-h2']}>Наши клиенты</h2>
           <Swiper
             spaceBetween={10}
             slidesPerView={3}
