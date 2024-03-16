@@ -4,6 +4,14 @@
   color: var(--white-color);
 }
 
+.background-div {
+  background-image: url('/FotoVlad.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(85%);
+}
+
 .div-works-stages {
   display: flex;
   flex-direction: column;
@@ -11,21 +19,11 @@
   align-items: center;
 }
 
-.background-div {
-  margin-top: 150px;
-  position: absolute;
-  height: 135%;
-  min-width: 150%;
-  background: linear-gradient(to top, rgba(0, 0, 15, 0.01), rgba(0, 0, 0, 0.78)),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(10, 15, 20, 1)),
-    url('/public/FotoVlad.webp') center no-repeat;
-  background-size: cover;
-  filter: blur(1px);
-}
-
 .content-h2 {
   font-size: 52px;
   margin-bottom: 55px;
+  display: flex;
+  justify-content: center;
 }
 
 /*-------------------------TIMELINE-----------------------*/

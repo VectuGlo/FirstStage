@@ -1,19 +1,18 @@
+.background-div {
+  background-image: url('/logoBig.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+}
+
 .section-maps {
-  background-color: var(--blakus-color);
+  background-color: var(--bs-black);
   color: var(--white-color);
 }
 
 .map-h2 {
   font-size: 52px;
   margin-bottom: 45px;
-}
-
-.background-div {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background: url('/public/logoBig.webp') center no-repeat;
-  background-size: 350px;
 }
 
 .advantages {

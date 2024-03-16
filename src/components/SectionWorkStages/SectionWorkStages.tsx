@@ -66,16 +66,18 @@ function SectionWorkStages() {
 
   return (
     <>
-      <section className={styles['section-works-stages']}>
+      <section
+        className={cn(styles['background-div'], styles['section-works-stages'])}
+      >
         <div
           className={cn(
             styles['div-works-stages'],
             stylesBootstrap['container-fluid']
           )}
         >
-          <h2 className={styles['content-h2']}>Этапы Работы</h2>
-          <div className={styles['background-div']}></div>
           <div className={styles['timeline']}>
+            <h2 className={styles['content-h2']}>Этапы Работы</h2>
+
             {timelineElements.map((element) => {
               return (
                 <div

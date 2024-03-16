@@ -1,8 +1,8 @@
 .custom {
-  height: 50px;
+  height: 40px;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.966) 40%,
+    rgba(0, 0, 0, 1) 40%,
     rgba(255, 0, 0, 0.777) 65%,
     var(--bs-white) 85%
   );
@@ -14,7 +14,7 @@
     to top,
     var(--bs-white) 40%,
     rgba(255, 0, 0, 0.777) 65%,
-    rgba(0, 0, 0, 0.966) 85%
+    rgba(0, 0, 0, 1) 85%
   );
 }
 

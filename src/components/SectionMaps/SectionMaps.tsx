@@ -8,7 +8,11 @@ function SectionMaps() {
   return (
     <>
       <section
-        className={cn(stylesBootstrap['col-12'], styles['section-maps'])}
+        className={cn(
+          stylesBootstrap['col-12'],
+          styles['background-div'],
+          styles['section-maps']
+        )}
       >
         <div className={cn(stylesBootstrap['container-fluid'])}>
           <h2 className={cn(styles['map-h2'], stylesBootstrap['text-center'])}>
@@ -17,7 +21,6 @@ function SectionMaps() {
           <div className={cn(styles['advantages'])}>
             <SectionMapsContent />
           </div>
-          <div className={styles['background-div']}></div>
         </div>
       </section>
       <Separator apperance="dark" />
