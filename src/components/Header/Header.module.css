@@ -21,6 +21,6 @@
 .nav-link-a {
   padding-top: 15px;
   cursor: pointer;
-  transition: color 0.55s ease-in-out, background-color 0.55s ease-in-out,
-    border-color 0.55s ease-in-out;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out,
+    border-color 0.4s ease-in-out;
 }
