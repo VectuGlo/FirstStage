@@ -5,7 +5,7 @@ import cn from 'classnames';
 const links = [
   { id: 'navLink01', textLink: 'Этапы работы' },
   { id: 'navLink02', textLink: 'Наши клиенты' },
-  { id: 'navLink03', textLink: 'Поиск автомобиля' },
+  { id: 'navLink03', textLink: 'Аукционы онлайн' },
   { id: 'navLink04', textLink: 'Онлайн калькулятор' },
   { id: 'navLink05', textLink: 'Контакты' },
 ];
