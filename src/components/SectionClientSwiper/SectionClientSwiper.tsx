@@ -43,7 +43,7 @@ function SectionClientSwiper() {
     slide: 1,
   });
 
-  function openLightboxOnSlide(number) {
+  function openLightboxOnSlide(number = Number()) {
     setLightboxController({
       toggler: !lightboxController.toggler,
       slide: number,

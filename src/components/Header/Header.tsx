@@ -2,6 +2,14 @@ import stylesBootstrap from 'bootstrap/dist/css/bootstrap.min.module.css';
 import styles from './Header.module.css';
 import cn from 'classnames';
 
+const links = [
+  { id: 'navLink01', textLink: 'Этапы работы' },
+  { id: 'navLink02', textLink: 'Наши клиенты' },
+  { id: 'navLink03', textLink: 'Поиск автомобиля' },
+  { id: 'navLink04', textLink: 'Онлайн калькулятор' },
+  { id: 'navLink05', textLink: 'Контакты' },
+];
+
 function Header() {
   return (
     <section className={cn(styles['header'], stylesBootstrap['fixed-top'])}>
@@ -36,25 +44,20 @@ function Header() {
                   stylesBootstrap['justify-content-end']
                 )}
               >
-                <li className={stylesBootstrap['nav-item']}>
-                  <a className={stylesBootstrap['nav-link']}>Этапы работы</a>
-                </li>
-                <li className={stylesBootstrap['nav-item']}>
-                  <a className={stylesBootstrap['nav-link']}>Наши клиенты</a>
-                </li>
-                <li className={stylesBootstrap['nav-item']}>
-                  <a className={stylesBootstrap['nav-link']}>
-                    Популярные автомобили
-                  </a>
-                </li>
-                <li className={stylesBootstrap['nav-item']}>
-                  <a className={stylesBootstrap['nav-link']}>
-                    Онлайн калькулятор
-                  </a>
-                </li>
-                <li className={stylesBootstrap['nav-item']}>
-                  <a className={stylesBootstrap['nav-link']}>Контакты</a>
-                </li>
+                {links.map((item) => {
+                  return (
+                    <li key={item.id} className={stylesBootstrap['nav-item']}>
+                      <a
+                        className={cn(
+                          stylesBootstrap['nav-link'],
+                          styles['nav-link-a']
+                        )}
+                      >
+                        {item.textLink}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>

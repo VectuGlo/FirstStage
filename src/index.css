@@ -27,8 +27,8 @@ h3 {
 a {
   color: var(--white-color);
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
+  transition: color 2s ease-in-out, background-color 2s ease-in-out,
+    border-color 2s ease-in-out;
 }
 
 ul {
