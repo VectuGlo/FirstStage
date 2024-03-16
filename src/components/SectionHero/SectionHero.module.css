@@ -3,11 +3,12 @@
 }
 
 .hero {
-  height: 100%;
+  min-height: 100%;
   background-image: url('/hero.png');
-  background-size: cover;
-  background-position: 0% 70%;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(35%);
   color: var(--white-color);
 }
 

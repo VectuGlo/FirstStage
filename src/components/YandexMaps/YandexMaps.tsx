@@ -12,7 +12,7 @@ function YandexMaps({
       <Placemark
         defaultOptions={{
           iconLayout: 'default#image',
-          iconImageHref: 'favicon.ico',
+          iconImageHref: 'map.ico',
           iconImageSize: [32, 32],
           iconImageOffset: [-32, -25],
         }}
