@@ -18,12 +18,14 @@ function Hero() {
           )}
         >
           <div className={cn(stylesBootstrap['col-5'], styles['heading'])}>
-            <h1 className={styles['heading-h1']}>
-              Авто из Японии, Кореи и Китая под заказ
-            </h1>
-            <h2 className={styles['heading-h2']}>
-              Комиссия составляет 15 000 ₽
-            </h2>
+            <div className={styles['heading-div-h']}>
+              <h1 className={styles['heading-h1']}>
+                Авто из Японии, Кореи и Китая под заказ
+              </h1>
+              <h2 className={styles['heading-h2']}>
+                Комиссия составляет 15 000 ₽
+              </h2>
+            </div>
             <Button className={styles['btn']}>Оставить заявку</Button>
           </div>
         </div>
