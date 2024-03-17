@@ -1,6 +1,6 @@
 :root {
-  --transition-a: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
-    border-color 0.3s ease-in-out;
+  --transition-a: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
 }
 
 .header {
@@ -44,7 +44,7 @@
 }
 
 .nav-link-a {
-  padding-top: 15px;
+  padding-top: 25px;
   cursor: pointer;
   transition: var(--transition-a);
 }
