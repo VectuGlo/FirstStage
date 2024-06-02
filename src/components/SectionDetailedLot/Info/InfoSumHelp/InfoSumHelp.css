@@ -1,0 +1,19 @@
+.modall-header__bottom {
+  border-bottom: 0;
+}
+.modal-header .btn-close-custom {
+  margin-top: 0px;
+}
+/*Icon*/
+.btn-pos {
+  margin: 0;
+  width: 48%;
+}
+.btn-pos img {
+  width: 20px;
+  height: 20px;
+}
+.btn-tel img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,24 @@
+import { BlockItemProps } from './BlockItemProps';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import cn from 'classnames';
+
+export default function BlockItem({
+  title,
+  value,
+  styleClass
+}: BlockItemProps) {
+  return (
+    <div className={cn(styleClass, 'd-flex')}>
+      <p className="me-2 w-50 text-secondary">
+        {title === 'Двигатель' ? (
+          <>
+            {title}см<sup>3</sup>
+          </>
+        ) : (
+          title
+        )}
+      </p>
+      <span className="fw-bolder">{value}</span>
+    </div>
+  );
+}

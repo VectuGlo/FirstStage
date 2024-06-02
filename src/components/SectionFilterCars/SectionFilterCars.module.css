@@ -1,0 +1,43 @@
+
+.h-filter {
+  margin: 50px 0px;
+}
+
+.section-hero {
+  height: 1000px;
+  filter: none;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  border: 2px solid var(--redus-color);
+  border-radius: 10px;
+  background-color: var(--bs-gray-200);
+  color: var(--text-color);
+  font-family: var(--font2);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.filter .row {
+  margin-top: 10px;
+}
+
+.btn {
+  box-shadow: none;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--white-color);
+  border: 3px solid var(--redus-color);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: var(--redus-color);
+  border: 3px solid var(--white-color);
+}

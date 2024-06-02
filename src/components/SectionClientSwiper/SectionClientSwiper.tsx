@@ -13,46 +13,49 @@ import stylesBootstrap from 'bootstrap/dist/css/bootstrap.module.css';
 
 function SectionClientSwiper() {
   const swiperElements = [
-    '/Images/Swiper/swiper-1.jpeg',
-    '/Images/Swiper/swiper-2.jpeg',
-    '/Images/Swiper/swiper-3.jpeg',
-    '/Images/Swiper/swiper-4.jpeg',
-    '/Images/Swiper/swiper-5.jpeg',
-    '/Images/Swiper/swiper-6.jpeg',
-    '/Images/Swiper/swiper-7.jpeg',
-    '/Images/Swiper/swiper-8.jpeg',
+    '/Images/swiperTitle/swiper-1.jpeg',
+    '/Images/swiperTitle/swiper-2.jpeg',
+    '/Images/swiperTitle/swiper-3.jpeg',
+    '/Images/swiperTitle/swiper-4.jpeg',
+    '/Images/swiperTitle/swiper-5.jpeg',
+    '/Images/swiperTitle/swiper-6.jpeg',
+    '/Images/swiperTitle/swiper-7.jpeg',
+    '/Images/swiperTitle/swiper-8.jpeg'
   ];
 
   const breakpoints = {
     320: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 10
     },
     480: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 10
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 10,
-    },
+      spaceBetween: 10
+    }
   };
 
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
-    slide: 1,
+    slide: 1
   });
 
   function openLightboxOnSlide(number = Number()) {
     setLightboxController({
       toggler: !lightboxController.toggler,
-      slide: number,
+      slide: number
     });
   }
 
   return (
     <>
-      <section className={stylesBootstrap['container-fluid']}>
+      <section
+        id="SectionClientSwiper"
+        className={stylesBootstrap['container-fluid']}
+      >
         <div className={styles['content']}>
           <h2 className={styles['content-h2']}>Наши клиенты</h2>
           <Swiper
@@ -62,7 +65,7 @@ function SectionClientSwiper() {
             loop={true}
             pagination={{
               el: '.my-custom-pagination-div',
-              clickable: true,
+              clickable: true
             }}
             navigation={true}
             modules={[Pagination, Navigation]}

@@ -1,0 +1,41 @@
+.li-flex {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.car-card {
+  width: 18rem;
+  background-color: var(--bs-dark);
+  color: var(--white-color);
+}
+
+.div-img-rank {
+  display: contents;
+}
+
+.btn-rank {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin: 175px 0px 0px 210px;
+  padding: 0px 6px;
+}
+
+.icon-rank svg {
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+  color: grey;
+}
+
+.btn-rank span {
+  color: var(--bs-dark);
+  font-weight: 600;
+}
+
+.card-top-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

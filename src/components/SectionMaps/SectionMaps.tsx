@@ -2,12 +2,13 @@ import stylesBootstrap from 'bootstrap/dist/css/bootstrap.module.css';
 import styles from './SectionMaps.module.css';
 import cn from 'classnames';
 import Separator from '../Separator/Separator';
-import SectionMapsContent from '../SectionMapsContent/SectionMapsContent';
+import SectionMapsContent from './SectionMapsContent/SectionMapsContent';
 
 function SectionMaps() {
   return (
     <>
       <section
+        id="Contacts"
         className={cn(
           stylesBootstrap['col-12'],
           styles['background-div'],

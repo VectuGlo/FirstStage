@@ -1,0 +1,22 @@
+.section-cars {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: var(--blakus-color);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paginationDiv {
+  display: flex;
+  justify-content: center;
+  background-color: var(--blakus-color);
+}
+
+.paginationDiv ul li {
+  margin: 0;
+}

@@ -1,0 +1,6 @@
+.groupe-input input {
+  padding: auto;
+}
+.groupe-input input:not(:first-child) {
+  margin-left: 5px;
+}

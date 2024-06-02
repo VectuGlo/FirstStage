@@ -1,0 +1,5 @@
+.nav-link-a {
+  padding-top: 25px;
+  cursor: pointer;
+  transition: var(--transition-a);
+}

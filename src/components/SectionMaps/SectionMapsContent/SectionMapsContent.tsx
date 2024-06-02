@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import stylesBootstrap from 'bootstrap/dist/css/bootstrap.module.css';
 import styles from './SectionMapsContent.module.css';
 import cn from 'classnames';
-import Button from '../Button/Button';
+import Button from '../../Button/Button';
 import YandexMaps from '../YandexMaps/YandexMaps';
 
 const elementsContents = [
@@ -24,7 +24,7 @@ const elementsContents = [
     imageWA: <FaWhatsapp />,
     hrefWA:
       'https://wa.me/+79243358311?text=Здравствуйте,%20пишу%20с%20asiasalesauto.ru',
-    placeMarkPos: [43.14026428035671, 131.91669773854233],
+    placeMarkPos: [43.14026428035671, 131.91669773854233]
   },
   {
     id: 'addressOffice2',
@@ -41,8 +41,8 @@ const elementsContents = [
     imageWA: <FaWhatsapp />,
     hrefWA:
       'https://wa.me/+79330233966?text=Здравствуйте,%20пишу%20с%20asiasalesauto.ru',
-    placeMarkPos: [56.004365073511224, 92.83152775051715],
-  },
+    placeMarkPos: [56.004365073511224, 92.83152775051715]
+  }
 ];
 
 function SectionMapsContent() {

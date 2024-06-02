@@ -1,19 +1,32 @@
 :root {
-  --font1: 'Assistant', sans-serif;
+  --font1: "Assistant", sans-serif;
   --font2: Roboto, sans-serif;
-  --font2s: 'Roboto Serif', sans-serif;
+  --font2s: "Roboto Serif", sans-serif;
   --font3: Stem, sans-serif;
   --text-color: #000000;
   --white-color: white;
   --redus-color: rgba(255, 0, 0, 1);
   --blakus-color: rgba(0, 0, 0, 1);
+  --blakus-color2: rgba(0, 0, 0, 0.15);
   --greus-color: rgb(93, 95, 95);
-  --white-hover-box-shadow: rgba(255, 255, 255, 1) 0px 0px 20px 2px;
-  --black-hover-box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px 2px;
+  --white-hover-box-shadow: rgb(22, 15, 15) 0px 0px 20px 2px;
+  --black-hover-box-shadow: rgba(0, 0, 0, 1) 0px 0px 12px 2px;
+  --transition-a: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+a {
+  color: var(--white-color);
+  text-decoration: none;
+  transition: var(--transition-a);
+}
+
+a:hover {
+  color: var(--redus-color);
 }
 
 body {
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 h1,
@@ -24,11 +37,8 @@ h3 {
   font-style: normal;
 }
 
-a {
-  color: var(--white-color);
-  text-decoration: none;
-  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out,
-    border-color 0.5s ease-in-out;
+h1 span {
+  color: var(--redus-color);
 }
 
 ul {
@@ -40,6 +50,12 @@ li {
   margin: 0px 0px 15px 0px;
 }
 
-a:hover {
+label span {
   color: var(--redus-color);
+}
+
+input:focus[type="text"] {
+  border-color: #fe8686;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(255, 40, 40, 0.705);
 }

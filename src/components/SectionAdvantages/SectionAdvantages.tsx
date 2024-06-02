@@ -16,14 +16,7 @@ function Advantages() {
             styles['advantages']
           )}
         >
-          <h2
-            className={cn(
-              styles['advantages-h2'],
-              stylesBootstrap['text-center']
-            )}
-          >
-            Наши преимущества
-          </h2>
+          <h2 className={cn(styles['advantages-h2'])}>Наши преимущества</h2>
           <CardsAdvantages />
         </div>
       </section>

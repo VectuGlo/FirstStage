@@ -1,0 +1,13 @@
+ul {
+  padding: 0;
+}
+
+.auc-list {
+  margin-top: 50px;
+}
+
+.auc-list__title {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}

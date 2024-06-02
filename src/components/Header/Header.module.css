@@ -1,7 +1,4 @@
-:root {
-  --transition-a: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
-}
+
 
 .header {
   padding: 5px 0px;
@@ -47,4 +44,8 @@
   padding-top: 25px;
   cursor: pointer;
   transition: var(--transition-a);
+}
+
+.active {
+  color: var(--redus-color);
 }

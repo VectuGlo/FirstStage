@@ -6,7 +6,7 @@ function Separator({ className, apperance }: SeparatorProps) {
   return (
     <div
       className={cn(styles.custom, className, {
-        [styles['dark']]: apperance === 'dark',
+        [styles['dark']]: apperance === 'dark'
       })}
     ></div>
   );
