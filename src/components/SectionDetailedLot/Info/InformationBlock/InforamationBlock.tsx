@@ -1,62 +1,46 @@
-//import styles from './NameLot.module.css';
-import { Await, useLoaderData } from 'react-router-dom';
-import { Cards } from '../../../../interfaces/cards.interface';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BlockItem from './BlockItem/BlockItem';
+import { InfoProps } from '../Info.props';
 
-export default function InformationBlock() {
-  const data = useLoaderData() as { data: Cards };
-
+export default function InformationBlock({ car }: InfoProps) {
   return (
-    <Await resolve={data.data}>
-      {({ data }: { data: Cards }) => (
-        <div className="info__information d-flex flex-column flex-lg-row">
-          <div className="info__information-block1 w-100 w-lg-50">
-            <BlockItem
-              title="Комплектация"
-              styleClass="block1__item"
-              value={data.equipment}
-            />
-            <BlockItem
-              title="Год"
-              styleClass="block1__item"
-              value={data.year_of_creation}
-            />
-            <BlockItem
-              title="Оценка"
-              styleClass="block1__item"
-              value={data.rank}
-            />
-            <BlockItem
-              title="Трансмиссия"
-              styleClass="block1__item"
-              value={data.transmission}
-            />
-          </div>
-          <div className="info__information-block2 w-100 w-lg-50">
-            <BlockItem
-              title="Пробег, км"
-              styleClass="block2__item"
-              value={data.mileage}
-            />
-            <BlockItem
-              title="Двигатель"
-              styleClass="block2__item"
-              value={data.engine_capacity}
-            />
-            <BlockItem
-              title="Кузов"
-              styleClass="block2__item"
-              value={data.body}
-            />
-            <BlockItem
-              title="Привод"
-              styleClass="block2__item"
-              value={data.alltime}
-            />
-          </div>
-        </div>
-      )}
-    </Await>
+    <div className="info__information d-flex flex-column flex-lg-row">
+      <div className="info__information-block1 w-100 w-lg-50">
+        <BlockItem
+          title="Комплектация"
+          styleClass="block1__item"
+          value={car.equipment}
+        />
+        <BlockItem
+          title="Год"
+          styleClass="block1__item"
+          value={car.year_of_creation}
+        />
+        <BlockItem title="Оценка" styleClass="block1__item" value={car.rank} />
+        <BlockItem
+          title="Трансмиссия"
+          styleClass="block1__item"
+          value={car.transmission}
+        />
+      </div>
+      <div className="info__information-block2 w-100 w-lg-50">
+        <BlockItem
+          title="Пробег"
+          styleClass="block2__item"
+          value={car.mileage}
+        />
+        <BlockItem
+          title="Двигатель"
+          styleClass="block2__item"
+          value={car.engine_capacity}
+        />
+        <BlockItem title="Кузов" styleClass="block2__item" value={car.body} />
+        <BlockItem
+          title="Привод"
+          styleClass="block2__item"
+          value={car.alltime}
+        />
+      </div>
+    </div>
   );
 }

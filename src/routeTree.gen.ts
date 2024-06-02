@@ -14,7 +14,7 @@ import { createFileRoute } from '@tanstack/react-router'
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as IndexImport } from './routes/index'
-import { Route as AuctionsLotImport } from './routes/auctions/$lot'
+import { Route as AuctionsIdImport } from './routes/auctions/$id'
 
 // Create Virtual Routes
 
@@ -34,8 +34,8 @@ const AuctionsIndexLazyRoute = AuctionsIndexLazyImport.update({
   import('./routes/auctions/index.lazy').then((d) => d.Route),
 )
 
-const AuctionsLotRoute = AuctionsLotImport.update({
-  path: '/auctions/$lot',
+const AuctionsIdRoute = AuctionsIdImport.update({
+  path: '/auctions/$id',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -50,11 +50,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/auctions/$lot': {
-      id: '/auctions/$lot'
-      path: '/auctions/$lot'
-      fullPath: '/auctions/$lot'
-      preLoaderRoute: typeof AuctionsLotImport
+    '/auctions/$id': {
+      id: '/auctions/$id'
+      path: '/auctions/$id'
+      fullPath: '/auctions/$id'
+      preLoaderRoute: typeof AuctionsIdImport
       parentRoute: typeof rootRoute
     }
     '/auctions/': {
@@ -71,7 +71,7 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
-  AuctionsLotRoute,
+  AuctionsIdRoute,
   AuctionsIndexLazyRoute,
 })
 
@@ -84,15 +84,15 @@ export const routeTree = rootRoute.addChildren({
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/auctions/$lot",
+        "/auctions/$id",
         "/auctions/"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
-    "/auctions/$lot": {
-      "filePath": "auctions/$lot.tsx"
+    "/auctions/$id": {
+      "filePath": "auctions/$id.tsx"
     },
     "/auctions/": {
       "filePath": "auctions/index.lazy.tsx"

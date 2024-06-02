@@ -50,7 +50,26 @@ function HeaderNavLinks() {
       >
         {path !== '/' ? (
           <HeaderLink>
-            <Link to={'/'}>На главную</Link>
+            <Link
+              to="/"
+              activeProps={{
+                className: cn(styles['active'])
+              }}
+            >
+              На главную
+            </Link>
+            {/* {linksScroll.map((item) => {
+              return (
+                <Link
+                  to={item.scrollTo}
+                  activeProps={{
+                    className: cn(styles['active'])
+                  }}
+                >
+                  {item.textLink}
+                </Link>
+              );
+            })} */}
           </HeaderLink>
         ) : (
           linksScroll.map((item) => {
@@ -76,10 +95,9 @@ function HeaderNavLinks() {
             <HeaderLink key={item.id}>
               <Link
                 to={item.hR}
-                // className={
-                //   { isActive } ? cn({ [styles.active]: isActive }) : cn()
-                // }
-                // className={({ isActive }) => cn({ [styles.active]: isActive })}
+                activeProps={{
+                  className: cn(styles['active'])
+                }}
               >
                 {item.textLink}
               </Link>

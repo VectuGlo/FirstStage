@@ -197,7 +197,7 @@ function displayInput(elements: MyObjectInputsRow[]) {
   });
 }
 
-export default function SectionFilterCars() {
+function SectionFilterCars() {
   return (
     <SectionHero className={styles['section-hero']}>
       <SectionHeroHeading>
@@ -311,3 +311,5 @@ export default function SectionFilterCars() {
     </SectionHero>
   );
 }
+
+export { SectionFilterCars };

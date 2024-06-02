@@ -63,7 +63,7 @@ export default function CardCar(props: CarsProps) {
   ];
 
   return (
-    <Link to={'/auctions/$lot'} params={{ lot: props.lot }}>
+    <Link to={'/auctions/$id'} params={{ id: props.id }}>
       <div
         className={cn(
           stylesBootstrap['card'],
